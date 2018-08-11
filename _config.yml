@@ -1,1 +1,11 @@
+# basic options
+title: codedocs
+author: denipub
+email: your-email@domain.comm
+description: drupal notes
+# twitter_username: jekyllrb
+github_username:  denipub
+
+# Build settings
+markdown: kramdown
 theme: jekyll-theme-minimal
