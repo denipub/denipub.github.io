@@ -1,6 +1,7 @@
 ---
 layout: post
-title: A Great First Post
+permalink: /:title
+title: AGreatFirstPost
 ---
 
 This is it!
