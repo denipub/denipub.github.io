@@ -1,0 +1,8 @@
+- title: "Menu item 1"
+  href: "/menuLevel1/file.md"
+  sub:
+    - title: "menu item 1.1"
+      href: "/menuLevel1/menuLevel2/file.md"
+...
+- title: "Menu item 3"
+  href: "/menuLevel1/file2.md"
