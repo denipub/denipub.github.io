@@ -23,3 +23,32 @@ permalink: /test2/
 {% endfor %}
   
 </li>
+
+
+<!-- 1st level -->
+{% for nav in site.data.menu %}
+
+  {% if nav.sub != null %}
+
+    <li>
+      <ul>
+        <!-- 2nd level -->
+        {% for sub in nav.sub %}
+        <li>
+          <a href="{{ site.baseurl }}{{ sub.href }}">
+            {{ sub.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+
+  {% else %}
+
+    <li>
+      <a href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a>
+    </li>
+
+  {% endif %}
+
+{% endfor %}
