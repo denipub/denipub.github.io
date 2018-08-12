@@ -1,5 +1,6 @@
-<html>
-<body>
+---
+---
+###
 <li>
 {% assign url_parts = page.url | split: '/' %}
 {% assign url_parts_size = url_parts | size %}
@@ -18,5 +19,3 @@
   {% endif %}
 {% endfor %}
 </li>
-</body>
-</html>
