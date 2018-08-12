@@ -1,17 +1,23 @@
-{% assign url_parts = page.url | split: '/' %}
-{% assign url_parts_size = url_parts | size %}
-{% assign rm = url_parts | last %}
-{% assign base_url = page.url | replace: rm %}
 
-<ul>
-{% for node in site.pages %}
-  {% if node.url contains base_url %}
-    {% assign node_url_parts = node.url | split: '/' %}
-    {% assign node_url_parts_size = node_url_parts | size %}
-    {% assign filename = node_url_parts | last %}
-    {% if url_parts_size == node_url_parts_size and filename != 'index.html' %}
-      <li><a href='{{node.url}}'>{{node.title}}</a></li>
-    {% endif %}
-  {% endif %}
-{% endfor %}
-</ul>
+## TEST
+
+### Bug Fixes
+
+  * Footer overlapping issue (Support Microsoft Explorer 11) (#248)
+
+## 2.5.0
+
+### Bug Fixes
+
+  * Add `jekyll-feed` plugin in config (#228)
+
+### Minor Enhancements
+
+  * Stick footer for short posts (#223)
+  * Consolidate trigger SVG paths (#148)
+
+## 2.4.1
+
+### Bug Fixes
+
+  * Reintroduce removed social includes for backwards compatibility (#217)
