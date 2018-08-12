@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-Personal notes-blog for Drupal 8 issues.
+Personal notes for Drupal 8 issues.
 
 Reasons:
 - Entity API.
@@ -11,4 +11,4 @@ Reasons:
 
 ## Other thoughts
 
-This is s test.
+This is a test.
