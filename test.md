@@ -9,7 +9,6 @@
         var selector = $('.node-form');
         var subselector = selector.find('.form-item'); // list-fieldset paragraphs-content form-item.
         var actions = subselector.find('.remove-item');
-
         $(subselector).on('click', '.remove-item', function(event) {
             if (event.target === this) {
                 var editor = $(event.target).closest('tr').find('textarea').attr('id');
