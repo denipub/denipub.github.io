@@ -22,6 +22,9 @@
                     });
                 });
 
+(https://stackoverflow.com/questions/7448860/how-to-stop-event-propagation-when-using-delegate)                
+
+
 ### Drupal add button to multi value field inside Paragraphs in article node
 
 MODULENAME.module inside function MODULENAME_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
