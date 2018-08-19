@@ -3,9 +3,8 @@
 
 ### jQuery prevent event bubbling, emptying text in ckeditor 
 
-  * event.stopPropagation(), event.stopImmediatePropagation(), event delegation (#LTN-749)
+  * KW: event.stopPropagation(), event.stopImmediatePropagation(), event delegation (#LTN-749)
 
-test:
 
                 $(document).ready(function () {
                     var selector = $('.node-form');
@@ -22,6 +21,30 @@ test:
                         }
                     });
                 });
+
+### Drupal add button to multi value field inside Paragraphs in article node
+
+MODULENAME.module inside function MODULENAME_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+                $i = 0;
+                foreach ($form['field_paragraphs']['widget']['0']['subform']['field_list_items']['widget'] as $delta => $item) {
+                  if (is_numeric($delta) && $item['#base_type'] == 'textarea') {
+
+                    $form['field_paragraphs']['widget']['0']['subform']['field_list_items']['widget'][$i]['remove_item'] = [
+                      '#type' => 'button',
+                      '#value' => t('x', [], ['context' => 'ltn']),
+                      '#title' => t('Remove item', [], ['context' => 'ltn']),
+                      '#name' => 'remove-item',
+                      '#attributes' => [
+                        'onclick' => 'return (false);',
+                        'class' => [
+                          'remove-item', 'button--small',
+                        ],
+                      ],
+                    ];
+                    $i++;
+                  }
+                }
 
 ## 2.5.0
 
