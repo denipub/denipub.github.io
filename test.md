@@ -1,26 +1,26 @@
 
 ## Random
 
-### jQuery event bubbling, empty text in ckeditor 
+### jQuery event bubbling, emptying text in ckeditor 
 
   * event.stopPropagation(), event.stopImmediatePropagation(), event delegation (#LTN-749)
+test:
 
-   `$(document).ready(function () {
-        var selector = $('.node-form');
-        var subselector = selector.find('.form-item'); // list-fieldset paragraphs-content form-item.
-        var actions = subselector.find('.remove-item');
-        $(subselector).on('click', '.remove-item', function(event) {
-            if (event.target === this) {
-                var editor = $(event.target).closest('tr').find('textarea').attr('id');
-                CKEDITOR.instances[editor].setData('');
-                $(event.target).closest('tr').hide();
-            }
-            else {
-                unbind();
-            }
-        });
-
-    });`
+                `$(document).ready(function () {
+                    var selector = $('.node-form');
+                    var subselector = selector.find('.form-item'); // list-fieldset paragraphs-content form-item.
+                    var actions = subselector.find('.remove-item');
+                    $(subselector).on('click', '.remove-item', function(event) {
+                        if (event.target === this) {
+                            var editor = $(event.target).closest('tr').find('textarea').attr('id');
+                            CKEDITOR.instances[editor].setData('');
+                            $(event.target).closest('tr').hide();
+                        }
+                        else {
+                            unbind();
+                        }
+                    });
+                });`
 
 ## 2.5.0
 
