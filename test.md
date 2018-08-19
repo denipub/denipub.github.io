@@ -2,6 +2,7 @@
 ## Random
 
 ### jQuery prevent event bubbling, emptying text in ckeditor 
+#### Week 13.8-19.8.2018
 
   * KW: event.stopPropagation(), event.stopImmediatePropagation(), event delegation (#LTN-749)
 
