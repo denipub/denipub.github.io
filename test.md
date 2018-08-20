@@ -50,9 +50,9 @@ MODULENAME.module inside function MODULENAME_form_node_form_alter(&$form, FormSt
                   }
                 }
 
-### Week 20.8-27.8.2018
+### Week 20.8-26.8.2018
 
-### Get taxonomy vacabulary of referenced taxonomy term
+### Get taxonomy vacabulary of referenced taxonomy term (get field definition/field settings of referenced entity)
 
                 // Hide Tags for News article type.
                 if (isset($form['field_tags']) && strpos($entity->bundle(), 'news') !== FALSE) {
@@ -64,6 +64,8 @@ MODULENAME.module inside function MODULENAME_form_node_form_alter(&$form, FormSt
                   kint($ref_field_settings['handler_settings']['target_bundles']);
                   //$form['field_tags']['#access'] = FALSE;
                 }
+
+
 
 
 
