@@ -26,7 +26,7 @@
 (https://stackoverflow.com/questions/7448860/how-to-stop-event-propagation-when-using-delegate)                
 
 
-### Drupal add button to multi value field inside Paragraphs in article node
+### Drupal button for removing fields in multi value field inside Paragraphs in article node
 
 MODULENAME.module inside function MODULENAME_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 
@@ -50,9 +50,27 @@ MODULENAME.module inside function MODULENAME_form_node_form_alter(&$form, FormSt
                   }
                 }
 
-## 2.5.0
+### Week 20.8-27.8.2018
 
-### Bug Fixes
+### Get taxonomy vacabulary of referenced taxonomy term
+
+                // Hide Tags for News article type.
+                if (isset($form['field_tags']) && strpos($entity->bundle(), 'news') !== FALSE) {
+                  $field_tags = $entity->get('field_tags');
+                  kint($field_tags);
+                  kint($field_tags->getFieldDefinition());
+                  $ref_field_settings = $field_tags->getFieldDefinition()->get('settings');
+                  // target_bundles is the vocabulary
+                  kint($ref_field_settings['handler_settings']['target_bundles']);
+                  //$form['field_tags']['#access'] = FALSE;
+                }
+
+
+
+
+
+
+## 2.5.0
 
   * Add `jekyll-feed` plugin in config (#228)
 
