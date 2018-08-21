@@ -67,8 +67,10 @@ MODULENAME.module inside function MODULENAME_form_node_form_alter(&$form, FormSt
 
 
 
+### Change tabs, menu
 
-
+use function hook_menu_local_tasks_alter to change tabs
+use function template_preprocess_menu_local_action to change menu (admin toolbar??)
 
 
 
