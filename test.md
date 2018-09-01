@@ -50,7 +50,7 @@ MODULENAME.module inside function MODULENAME_form_node_form_alter(&$form, FormSt
                   }
                 }
 
-### Week 20.8-26.8.2018
+#### Week 20.8-26.8.2018
 
 ### Get taxonomy vacabulary of referenced taxonomy term (get field definition/field settings of referenced entity)
 
@@ -73,7 +73,7 @@ use function hook_menu_local_tasks_alter to change tabs
 use function template_preprocess_menu_local_action to change menu (admin toolbar??)
 
 
-### Week 27.8-2.9.2018
+#### Week 27.8-2.9.2018
 
 ### Entity Browser translation
 
@@ -81,6 +81,8 @@ use function template_preprocess_menu_local_action to change menu (admin toolbar
 
 admin/config/content/entity_browser/{entity_browser}/general/translate/{langcode}/add
 admin/config/content/entity_browser/{entity_browser}/general/translate/{langcode}/edit
+
+
 
 
 
