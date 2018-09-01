@@ -73,6 +73,16 @@ use function hook_menu_local_tasks_alter to change tabs
 use function template_preprocess_menu_local_action to change menu (admin toolbar??)
 
 
+### Week 27.8-2.9.2018
+
+### Entity Browser translation
+
+* URL not workong (routing problem) - user this addresses to get to translation screens:
+
+admin/config/content/entity_browser/{entity_browser}/general/translate/{langcode}/add
+admin/config/content/entity_browser/{entity_browser}/general/translate/{langcode}/edit
+
+
 
 ## 2.5.0
 
