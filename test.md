@@ -82,7 +82,11 @@ use function template_preprocess_menu_local_action to change menu (admin toolbar
 admin/config/content/entity_browser/{entity_browser}/general/translate/{langcode}/add
 admin/config/content/entity_browser/{entity_browser}/general/translate/{langcode}/edit
 
+#### Week 22.10-28.10.2018
 
+### Twigg
+
+var_dump() in twig template:  {{ dump(row) }}
 
 
 
