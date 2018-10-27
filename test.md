@@ -91,15 +91,15 @@ var_dump() in twig template:  {{ dump(row) }}
 
 #### widget form alter (add css class to multi value field inside fieldset/details)
 
-/**
- * Implements hook_field_widget_WIDGET_TYPE_form_alter().
- */
-function ltn_types_field_widget_entity_browser_entity_reference_form_alter(&$element, FormStateInterface $form_state, $context) {
-  // Add css class to image fields for css positioning.
-  if ($context['items']->getName() == 'field_image') {
-    $element['#attributes']['class'][] = 'image-field';
-  }
-}
+        /**
+         * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+         */
+        function ltn_types_field_widget_entity_browser_entity_reference_form_alter(&$element, FormStateInterface $form_state, $context)         {
+          // Add css class to image fields for css positioning.
+          if ($context['items']->getName() == 'field_image') {
+            $element['#attributes']['class'][] = 'image-field';
+          }
+        }
 
 
 
