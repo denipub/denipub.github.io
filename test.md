@@ -101,7 +101,19 @@ var_dump() in twig template:  {{ dump(row) }}
           }
         }
 
+### Week 29.4-5.5.2019
 
+#### Twigg
+
+Print label of field (used in modules/custom/ltn_invoice/templates/ltn-invoice.html.twig): 
+{{ author.field_tax_number.fieldDefinition.label }}
+
+
+#### dependency injection in Service
+
+Used in (modules/custom/ltn_invoice/src/AuthorRankingService.php)
+The parameters are written in ltn_invoice.services.yml, no container static function is used like in plugins.
+      
 
 ## 2.5.0
 
